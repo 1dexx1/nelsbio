@@ -9,8 +9,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <NextSeo
-        title={"Aiden.gg"}
-        description={"Aiden's (aka SKRRRTT) personal site"}
+        title={"nelsbio.vercel.app"}
+        description={"био"}
         canonical={`https://aiden.gg${router.asPath.split("?")[0] === "/" ? "" : router.asPath.split("?")[0]}`}
         themeColor={"#2563eb"}
         openGraph={{
