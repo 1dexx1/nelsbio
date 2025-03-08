@@ -90,54 +90,17 @@ export default function About() {
           transition={{ duration: 0.5, delay: 0.1, ease: [0.39, 0.21, 0.12, 0.96], }}
           viewport={{ amount: 0.1, once: true }}
         >
-          About Me
+          о себе
         </motion.h1>
         <ul className="grid grid-cols-2 gap-4 mt-4">
           <AboutCard
-            title="Overall"
-            description="I've been running websites and other projects since the age of 15 but didn't learn how to code until I was 16 as it took me a bit to find a good way to start learning. By the end of my education, I hope to secure a rewarding job in web development, as it is a lifelong passion of mine. I enjoy creating things and find great satisfaction when others genuinely use and appreciate the end product."
+            title=""
+            description="todo: сказал утром напишет текст"
             direction="top"
             span={2}
             delay={0.1}
             gradient="bg-gradient-to-tl"
           />
-          <AboutCard
-            title="Frontend"
-            description="I have about 2 years of experience with frontend development, and I have worked with a variety of different frameworks and libraries."
-            tech={frontendTech}
-            direction="left"
-            span={1}
-            delay={0.15}
-            gradient="bg-gradient-to-br"
-          />
-          <AboutCard
-            title="Backend"
-            description="I have about 1 year of experience with backend development, and I have used multiple different frameworks and runtimes to create various APIs."
-            tech={backendTech}
-            direction="right"
-            span={1}
-            delay={0.2}
-            gradient="bg-gradient-to-bl"
-          />
-          <AboutCard
-            title="Other Technologies"
-            description="When it comes to the development process, I use a wide variety of tools, services, and technologies."
-            tech={otherTech}
-            direction="bottom"
-            span={presence && presence.activities.length > 0 ? 1 : 2}
-            delay={0.1}
-            gradient="bg-gradient-to-tr"
-          />
-          {presence && presence.activities.length > 0 &&
-            <PresenceCard
-              presence={presence}
-              date={date}
-              direction="bottom"
-              span={1}
-              delay={0.1}
-              gradient="bg-gradient-to-tl"
-            />
-          }
         </ul>
       </section>
     </>
