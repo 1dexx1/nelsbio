@@ -49,11 +49,11 @@ export default function ProjectCard({ url, title, fullDescription, cardDescripti
                 }
               </div>
               <div className="flex flex-col mt-2">
-                <h2 className="sm:text-2xl text-xl font-semibold">My Role</h2>
+                <h2 className="sm:text-2xl text-xl font-semibold">моя роль</h2>
                 <p className="sm:text-lg text-base">{myRole}</p>
               </div>
               <div className="flex flex-col mt-2">
-                <h2 className="sm:text-2xl text-xl font-semibold">Timeline</h2>
+                <h2 className="sm:text-2xl text-xl font-semibold">таймлайн</h2>
                 <p className="sm:text-lg text-base">{timeline}</p>
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function ProjectCard({ url, title, fullDescription, cardDescripti
             <div className="w-0.5 h-auto bg-accent rounded-lg lg:block hidden" />
             <div className="flex flex-col">
               <h2 className="sm:text-2xl text-2xl font-semibold">
-                Project Overview
+                описание
               </h2>
               <div className="max-h-[16.5rem] overflow-y-scroll bg-neutral-800 border-1 border-accent rounded-lg p-2">
                 {fullDescription.map((desc, i) => (
